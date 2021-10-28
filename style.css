@@ -1,0 +1,219 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/*CODE FOR TICKER BOX - Scrolling Land Acknowledgement, 
+adapted from: https://shareablecode.com/snippets/how-to-create-a-news-ticker-with-just-pure-html-and-css-DGsb-uH2T*/
+
+.tcontainer {
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .ticker-wrap {
+        width: 100%;
+        padding-left: 100%;
+        background-color: #eee;
+    }
+    
+    @keyframes ticker {
+        100% {
+            transform: translate3d(-100%, 0, 0);
+        }
+    }
+    
+    .ticker-move {
+        display: inline-block;
+        white-space: nowrap;
+        padding-right: 100%;
+        animation-timing-function: linear;
+        animation: ticker 60s infinite;
+        animation-duration: 120s;
+    }
+    
+    .ticker-move:hover {
+        animation-play-state: paused;
+    }
+    
+    .ticker-item {
+        display: inline-block;
+        padding: 0 100px;
+        font-size: 20px;
+    	font-family: 'Almarai', sans-serif;
+    }
+
+
+#container {
+    margin: auto;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    font-family: 'Almarai', sans-serif;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+
+nav ul li {
+	list-style: none;	
+	display: inline-block;
+	margin-left: 50px;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: black;
+}
+
+nav ul li a:hover{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+
+.navbar {
+	height: 12%;
+	display: flex;
+	align-items:  center;
+}
+
+.logo {
+	max-width: 150px;
+	position: relative;
+}
+
+.logo:hover {
+	cursor: pointer;
+}
+
+.Intro {
+	margin: auto;
+	max-width: 1000px;
+	position: relative;
+}
+
+h1 {
+	font-size: 7.5em;
+	line-height: 1em;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+h2 {
+	font-size: 2.5em;
+	text-align: left;
+}
+
+p {
+	font-family: 'Mate'serif;
+}
+
+.space {
+	margin: auto;
+	background: transparent;
+	min-height: 75px;
+	min-width: 100%;
+}
+
+/*CODING FOR MAIN PAGE - EVENTS FEATURE*/
+
+.MainTitle {
+/*Make title do something fun*/
+}
+
+.MainPageFeatures {
+	margin: auto;
+	max-width: 1250px;
+}
+
+.UpcomingEvents {
+	margin: auto;
+	border: 1px solid black;
+	display: grid;
+	min-height: 400px;
+}
+
+.Event1 {
+	background: transparent;
+	flex: 25%;
+	border-bottom: 1px solid black;
+}
+	.Event1:hover {
+	background: yellowgreen;
+	cursor: pointer;
+}
+
+.Event2 {
+	background: transparent;
+	flex: 25%;
+	width: 100%;
+	border-bottom: 1px solid black;
+}
+	.Event2:hover {
+	background: yellowgreen;
+	cursor: pointer;	
+}
+
+.Event3 {
+	background: transparent;
+	flex: 25%;
+	width: 100%;
+	border-bottom: 1px solid black;
+}
+	.Event3:hover {
+	background: yellowgreen;
+	cursor: pointer;
+}
+
+.Event4 {
+	background: transparent;
+	flex: 25%;
+	width: 100%;
+}
+
+.Event4:hover {
+	background: yellowgreen;
+	cursor: pointer;
+}
+
+
+.Highlights {
+	margin: auto;
+	border: 1px solid black;
+	display: flex;
+	height: 400px;
+}
+
+.Article1 {
+	flex: 50%;
+	background: yellow;
+	border-right: 1px solid black;
+}
+
+.Article2 {
+	flex: 50%;
+	background: red;
+	border-right: 1px solid black;
+}
+
+.Article3 {
+	flex: 50%;
+	background: blue;
+	border-right: 1px solid black;
+}
+
+.Article4 {
+	flex: 50%;
+	background: orange;
+}
+
+
+
+/*CODING FOR ABOUT PAGE*/
+
+.ABOUTtitle {
+	max-width: 700px;
+}
