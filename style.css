@@ -1,7 +1,22 @@
+
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+}
+
+body {
+	background-image: url("WebsiteBackground-01.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	margin-top: none;
+}
+
+a {
+	text-decoration: none;
+	text-decoration-color: none;
+	color: black;
 }
 
 /*CODE FOR TICKER BOX - Scrolling Land Acknowledgement, 
@@ -15,7 +30,10 @@ adapted from: https://shareablecode.com/snippets/how-to-create-a-news-ticker-wit
     .ticker-wrap {
         width: 100%;
         padding-left: 100%;
-        background-color: #eee;
+        background-color: white;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px black solid;
     }
     
     @keyframes ticker {
@@ -41,19 +59,15 @@ adapted from: https://shareablecode.com/snippets/how-to-create-a-news-ticker-wit
         display: inline-block;
         padding: 0 100px;
         font-size: 20px;
-    	font-family: 'Almarai', sans-serif;
+    	font-family: new-spirit, serif;
+    	font-weight: 400;
     }
 
 
 #container {
-    margin: auto;
-    width: 100%;
     margin-top: 25px;
     margin-bottom: 50px;
-    font-family: 'Almarai', sans-serif;
-    padding-left: 8%;
-    padding-right: 8%;
-    box-sizing: border-box;
+    font-family: new-spirit, serif;
 }
 
 nav ul li {
@@ -75,6 +89,9 @@ nav ul li a:hover{
 
 
 .navbar {
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
 	height: 12%;
 	display: flex;
 	align-items:  center;
@@ -90,12 +107,11 @@ nav ul li a:hover{
 }
 
 .Intro {
-	margin: auto;
-	max-width: 1000px;
 	position: relative;
 }
 
 h1 {
+	font-family: new-spirit, serif;
 	font-size: 7.5em;
 	line-height: 1em;
 	margin-top: 10px;
@@ -103,117 +119,667 @@ h1 {
 }
 
 h2 {
-	font-size: 2.5em;
+	font-size: 2em;
 	text-align: left;
 }
 
+h3 {
+	font-weight: 400;
+}
+
 p {
-	font-family: 'Mate'serif;
+    font-family: new-spirit, serif;
 }
 
 .space {
 	margin: auto;
 	background: transparent;
-	min-height: 75px;
+	min-height: 30px;
 	min-width: 100%;
 }
 
 /*CODING FOR MAIN PAGE - EVENTS FEATURE*/
 
 .MainTitle {
-/*Make title do something fun*/
+	background-color: transparent;
+	text-align: center;
+	padding: 50px;
+	border-top: black 1px solid;
+	border-bottom: black 1px solid;
+	background-repeat: none;
 }
 
-.MainPageFeatures {
+
+
+.IntroParagraph {
 	margin: auto;
-	max-width: 1250px;
+	max-width: 950px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 35px;
+	padding-bottom: 35px;
 }
+
 
 .UpcomingEvents {
-	margin: auto;
-	border: 1px solid black;
+	border-top: 1px solid black;
 	display: grid;
-	min-height: 400px;
+	font-family: new-spirit, serif;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.UETitle {
+	border-top: 1px solid black;
+	padding-left: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: white;
 }
 
 .Event1 {
-	background: transparent;
-	flex: 25%;
-	border-bottom: 1px solid black;
+	border-right: 1px black solid;
 }
-	.Event1:hover {
+
+.Event1:hover {
 	background: yellowgreen;
 	cursor: pointer;
+	border-right: 1px black solid;
+}
+
+.Event1Title {
+	padding: 50px;
+	display: flex;
+	font-size: 2em;
+	background: transparent;
 }
 
 .Event2 {
-	background: transparent;
-	flex: 25%;
-	width: 100%;
-	border-bottom: 1px solid black;
+	border-right: 1px black solid;
 }
-	.Event2:hover {
+
+.Event2:hover {
 	background: yellowgreen;
-	cursor: pointer;	
+	cursor: pointer;
+	border-right: 1px black solid;
+}
+
+.Event2Title {
+	padding: 50px;
+	display: flex;
+	font-size: 2em;
+	background: transparent;
 }
 
 .Event3 {
-	background: transparent;
-	flex: 25%;
-	width: 100%;
-	border-bottom: 1px solid black;
-}
-	.Event3:hover {
-	background: yellowgreen;
-	cursor: pointer;
+	border-right: 1px black solid;
 }
 
-.Event4 {
+.Event3:hover {
+	background: yellowgreen;
+	cursor: pointer;
+	border-right: 1px black solid;
+}
+
+.Event3Title {
+	padding: 50px;
+	display: flex;
+	font-size: 2em;
 	background: transparent;
-	flex: 25%;
-	width: 100%;
 }
 
 .Event4:hover {
 	background: yellowgreen;
 	cursor: pointer;
+	border-right: 1px black solid;
 }
 
-
-.Highlights {
-	margin: auto;
-	border: 1px solid black;
+.Event4Title {
+	padding: 50px;
 	display: flex;
-	height: 400px;
+	font-size: 2em;
+	background: transparent;
 }
 
-.Article1 {
-	flex: 50%;
-	background: yellow;
+
+.DateandTime {
+	border-top: 1px solid black;
+	display: grid;
+	font-family: new-spirit, serif;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.DateTime1 {
+	padding: 50px;
+	font-size: 1.5em;
+}
+
+.DateTime2 {
+	padding: 50px;
+	font-size: 1.5em;
+}
+
+.DateTime3 {
+	padding: 50px;
+	font-size: 1.5em;
+}
+
+.DateTime4 {
+	padding: 50px;
+	font-size: 1.5em;
+}
+
+/*CODING FOR MAIN PAGE - VIDEOS FEATURE*/
+
+.LatestVideos {
+	border-top: black solid 1px;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: 500px 300px;
+}
+
+.LVTitle {
+	padding-left: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-top: 1px solid black;
+	background-color: white;
+}
+
+.Video1 {
+	grid-column: 1;
+	border-right: 1px black solid;
+	border-bottom: 1px black solid;
+	column-span: 1fr;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.text {
+	align-items: center;
+	font-size: 2em;
+	padding: 50px;
+}
+
+
+.Video1Title {
+	grid-row: 2;
+	grid-column: 1;
 	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 25px;
 }
 
-.Article2 {
-	flex: 50%;
-	background: red;
+.Video2 {
+	border-right: 1px black solid;
+	column-span: 1fr;
+	border-bottom: 1px black solid;
+}
+
+.Video2Title {
+	grid-row: 2;
+	grid-column: 2;
 	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 25px;
 }
 
-.Article3 {
-	flex: 50%;
-	background: blue;
+.Video3 {
+	border-right: 1px black solid;
+	column-span: 1fr;
+	border-bottom: 1px black solid;
+}
+
+.Video3Title {
+	grid-row: 2;
+	grid-column: 3;
 	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 25px;
 }
 
-.Article4 {
-	flex: 50%;
-	background: orange;
+.Video4 {
+	border-right: 1px black solid;
+	column-span: 1fr;
+	border-bottom: 1px black solid;
 }
 
+.Video4Title {
+	grid-row: 2;
+	grid-column: 4;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 25px;
+}
+
+.Video5 {
+	column-span: 1fr;
+	border-bottom: 1px black solid;
+}
+
+.Video5Title {
+	grid-row: 2;
+	grid-column: 5;
+	border-bottom: 1px solid black;
+	padding: 25px;
+}
 
 
 /*CODING FOR ABOUT PAGE*/
 
+.ABOUT {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	font-family:new-spirit, serif;
+	font-weight: 400;
+	border-top: 1px black solid;
+	border-bottom: 1px black solid;
+	font-size: .75em;
+}
+
 .ABOUTtitle {
-	max-width: 700px;
+	grid-column: 1;
+	padding: 75px;
+}
+
+.ABOUTPhoto {
+	border-left: 1px black solid;
+	grid-column: 2;
+	background: white;
+	min-width: 100%;
+}
+
+.ABOUTIntro {
+	border-bottom: 1px solid black;
+}
+
+.ABOUTIntroParagraph {
+	align-content: center;
+	padding: 75px;
+}
+
+.MandateTitle {
+	padding-left: 75px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: white;
+	border-bottom: 1px solid black;	
+}
+
+.MandateIntro {
+	padding-left: 75px;
+	padding-right: 75px;
+	padding-top: 45px;
+	padding-bottom: 45px;
+	border-bottom: 1px solid black;
+}
+
+.MandateList {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 100px;
+	background: white;
+}
+
+.M1 {
+	grid-column: 2/12;
+	grid-row: 1;
+	padding: 25px;
+}
+
+.M2 {
+	border-top: 1px solid black;
+	grid-column: 2/12;
+	grid-row: 2;
+	padding: 25px;
+}
+
+.M3 {
+	border-top: 1px solid black;
+	grid-column: 2/12;
+	grid-row: 3;
+	padding: 25px;
+}
+
+.M4 {
+	border-top: 1px solid black;
+	grid-column: 2/12;
+	grid-row: 4;
+	padding: 25px;
+}
+
+.M5 {
+	border-top: 1px solid black;
+	grid-column: 2/12;
+	grid-row: 5;
+	padding: 25px;
+}
+
+.M6 {
+	border-top: 1px solid black;
+	grid-column: 2/12;
+	grid-row: 6;
+	padding: 25px;
+}
+
+.M7 {
+	border-top: 1px solid black;
+	grid-column: 2/12;
+	grid-row: 7;
+	padding: 25px;
+}
+
+.M8 {
+	border-top: 1px solid black;
+	grid-column: 2/12;
+	grid-row: 8;
+	padding: 25px;
+}
+
+.WWATitle {
+	padding-left: 75px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: white;
+	border-bottom: 1px solid black;	
+	border-top: 1px solid black;
+}
+
+.WWAIntro {
+	padding-left: 75px;
+	padding-right: 75px;
+	padding-top: 45px;
+	padding-bottom: 45px;
+	border-bottom: 1px solid black;
+}
+
+.TeamGrid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 500px 120px 500px 120px;
+	background: white;	
+}
+
+.P1 {
+	grid-column: 1;
+	grid-row: 1;
+	border-right: black 1px solid;	
+	border-bottom: black 1px solid;
+}
+
+.P1-Caption {
+	grid-column: 1;
+	grid-row: 2;
+	padding: 25px;
+	border-right: black 1px solid;	
+	border-bottom: black 1px solid;
+}
+
+.P2 {
+	grid-column: 2;
+	grid-row: 1;
+	border-right: black 1px solid;	
+	border-bottom: black 1px solid;
+}
+
+.P2-Caption {
+	grid-column: 2;
+	grid-row: 2;
+	padding: 25px;
+	border-right: black 1px solid;	
+	border-bottom: black 1px solid;
+}
+
+.P3 {
+	grid-column: 3;
+	grid-row: 1;
+	border-right: black 1px solid;	
+	border-bottom: black 1px solid;
+}
+
+.P3-Caption {
+	grid-column: 3;
+	grid-row: 2;
+	padding: 25px;
+	border-right: black 1px solid;	
+	border-bottom: black 1px solid;
+}
+
+.P4 {
+	grid-column: 4;
+	grid-row: 1;
+	border-bottom: black 1px solid;
+}
+
+.P4-Caption {
+	grid-column: 4;
+	grid-row: 2;
+	padding: 25px;	
+	border-bottom: black 1px solid;
+}
+
+.P5 {
+	grid-column: 1;
+	grid-row: 3;
+	border-right: black 1px solid;	
+	border-bottom: black 1px solid;
+}
+
+.P5-Caption {
+	grid-column: 1;
+	grid-row: 4;
+	padding: 25px;
+	border-right: black 1px solid;	
+	border-bottom: black 1px solid;
+}
+
+.P6 {
+	grid-column: 2;
+	grid-row: 3;
+	border-right: black 1px solid;	
+	border-bottom: black 1px solid;
+}
+
+.P6-Caption {
+	grid-column: 2;
+	grid-row: 4;
+	padding: 25px;
+	border-right: black 1px solid;	
+	border-bottom: black 1px solid;
+}
+
+.P7 {
+	grid-column: 3;
+	grid-row: 3;
+	border-right: black 1px solid;	
+	border-bottom: black 1px solid;
+}
+
+.P7-Caption {
+	grid-column: 3;
+	grid-row: 4;
+	padding: 25px;
+	border-right: black 1px solid;	
+	border-bottom: black 1px solid;
+}
+
+.P8 {
+	grid-column: 4;
+	grid-row: 3;
+	border-right: black 1px solid;	
+	border-bottom: black 1px solid;
+}
+
+.P8-Caption {
+	grid-column: 4;
+	grid-row: 4;
+	padding: 25px;
+	border-right: black 1px solid;	
+	border-bottom: black 1px solid;
+}
+
+
+/*SERVICES PAGE*/
+
+
+.ServicesHeading {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	font-family:new-spirit, serif;
+	font-weight: 400;
+	border-top: 1px black solid;
+	border-bottom: 1px black solid;
+	font-size: .75em;
+	grid-template-rows: 400px;
+}
+
+.ServicesTitle {
+	grid-column: 1;
+	border-right: 1px black solid;
+	padding: 50px;
+}
+
+.ServicesPhoto {
+	grid-column: 2;
+	object-fit: cover;
+}
+
+.ServicesMenu {
+	font-size: 2em;
+	font-weight: 400;
+}
+
+li:hover {
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.Service1Title {
+	padding-left: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: white;
+	border-bottom: 1px solid black;	
+}
+
+.Service1Body {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	border-bottom: 1px solid black;
+}
+
+.Service1Body_1 {
+	grid-column: 1;
+	padding: 50px;
+}
+
+.Service1Body_2 {
+	grid-column: 2;
+	padding: 50px;
+}
+
+.Service1Body_3 {
+	grid-column: 3;
+	padding: 50px;
+}
+
+.Service2Title {
+	padding-left: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: white;
+	border-bottom: 1px solid black;	
+}
+
+.Service2Body {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	border-bottom: 1px solid black;
+}
+
+.Service2Body_1 {
+	grid-column: 1;
+	padding: 50px;
+}
+
+.Service2Body_2 {
+	grid-column: 2;
+	padding: 50px;
+}
+
+.Service3Title {
+	padding-left: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: white;
+	border-bottom: 1px solid black;	
+}
+
+.Service3Body {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	border-bottom: 1px solid black;
+}
+
+.Service3Body_1 {
+	grid-column: 1;
+	padding: 50px;
+}
+
+.Service3Body_2 {
+	grid-column: 2;
+	padding: 50px;
+}
+
+.Service4Title {
+	padding-left: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: white;
+	border-bottom: 1px solid black;	
+}
+
+.Service4Body {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	border-bottom: 1px solid black;
+}
+
+.Service4Body_1 {
+	grid-column: 1;
+	padding: 50px;
+}
+
+.Service4Body_2 {
+	grid-column: 2;
+	padding: 50px;
+}
+
+
+.Service5Title {
+	padding-left: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: white;
+	border-bottom: 1px solid black;	
+}
+
+.Service5Body {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	border-bottom: 1px solid black;
+}
+
+.Service5Body_1 {
+	grid-column: 1;
+	padding: 50px;
+}
+
+.Service5Body_2 {
+	grid-column: 2;
+	padding: 50px;
 }
