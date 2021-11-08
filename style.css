@@ -6,11 +6,13 @@
 }
 
 body {
-	background-image: url("WebsiteBackground-01.png");
+	background-image: url("img/WebsiteBackground-01.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 	margin-top: none;
+	margin-bottom: none;
+	background-attachment: fixed;
 }
 
 a {
@@ -71,6 +73,7 @@ adapted from: https://shareablecode.com/snippets/how-to-create-a-news-ticker-wit
 
 #container {
     margin-top: 25px;
+    margin-bottom: none;
     font-family: new-spirit, serif;
 }
 
@@ -173,7 +176,6 @@ p {
 
 .UETitle {
 	border-top: 1px solid black;
-	padding-left: 50px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	background-color: white;
@@ -181,7 +183,6 @@ p {
 }
 
 .FillerTitle {
-	padding-left: 50px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	background-color: white;
@@ -306,15 +307,23 @@ p {
 /*CODING FOR MAIN PAGE - VIDEOS FEATURE*/
 
 .LatestVideos {
-	border-top: black solid 1px;
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
-	grid-template-rows: 500px 300px;
+}
+
+.video_image {
+	height: 500px;
+	border-right: 1px solid black;
+	border-top: black solid 1px;
+}
+
+.video_title {
+	height: 300px;
+	border-right: 1px solid black;
 }
 
 .LVTitle {
 	border-top: 1px solid black;
-	padding-left: 50px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	background-color: white;
@@ -323,8 +332,6 @@ p {
 
 .Video1 {
 	grid-column: 1;
-	border-right: 1px black solid;
-	border-bottom: 1px black solid;
 	column-span: 1fr;
 }
 
@@ -346,69 +353,62 @@ img {
 	grid-row: 2;
 	grid-column: 1;
 	border-right: 1px solid black;
-	border-bottom: 1px solid black;
+	border-top: 1px black solid;
 	padding: 25px;
 }
 
 .Video2 {
-	border-right: 1px black solid;
 	column-span: 1fr;
-	border-bottom: 1px black solid;
 }
 
 .Video2Title {
 	grid-row: 2;
 	grid-column: 2;
 	border-right: 1px solid black;
-	border-bottom: 1px solid black;
+	border-top: 1px black solid;
 	padding: 25px;
 }
 
 .Video3 {
-	border-right: 1px black solid;
 	column-span: 1fr;
-	border-bottom: 1px black solid;
 }
 
 .Video3Title {
 	grid-row: 2;
 	grid-column: 3;
 	border-right: 1px solid black;
-	border-bottom: 1px solid black;
+	border-top: 1px black solid;
 	padding: 25px;
 }
 
 .Video4 {
-	border-right: 1px black solid;
 	column-span: 1fr;
-	border-bottom: 1px black solid;
 }
 
 .Video4Title {
 	grid-row: 2;
 	grid-column: 4;
 	border-right: 1px solid black;
-	border-bottom: 1px solid black;
+	border-top: 1px black solid;
 	padding: 25px;
 }
 
 .Video5 {
 	column-span: 1fr;
-	border-bottom: 1px black solid;
 }
 
 .Video5Title {
 	grid-row: 2;
 	grid-column: 5;
-	border-bottom: 1px solid black;
+	border-top: 1px black solid;
 	padding: 25px;
 }
 
 
 /*CODING FOR ABOUT PAGE*/
 
-.ABOUT {
-	display: grid;
+/*.ABOUT {
+	display: block;
 	grid-template-columns: repeat(2, 1fr);
 	font-family:new-spirit, serif;
 	font-weight: 400;
@@ -418,16 +418,36 @@ img {
 }
 
 .ABOUTtitle {
-	grid-column: 1;
 	padding: 75px;
+	border-bottom: 1px black solid;
 }
 
 .ABOUTPhoto {
 	border-left: 1px black solid;
-	grid-column: 2;
 	background: white;
 	min-width: 100%;
+}*/
+
+.ABOUT {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	font-family:new-spirit, serif;
+	font-weight: 400;
+	border-bottom: 1px black solid;
+	font-size: .75em;
 }
+
+.ABOUTtitle {
+	border-top: 1px black solid;
+	border-right: 1px black solid;
+	padding: 100px;
+}
+
+.ABOUTPhoto {
+	object-fit: cover;
+	border-top: 1px black solid;
+}
+
 
 .ABOUTIntro {
 	border-bottom: 1px solid black;
@@ -435,11 +455,15 @@ img {
 
 .ABOUTIntroParagraph {
 	align-content: center;
-	padding: 75px;
+	padding-top: 75px;
+	padding-bottom: 75px;
+	padding-left: 100px;
+	padding-right: 100px;
+	font-size: 1.15em;
+	line-height: 1.25em;
 }
 
 .MandateTitle {
-	padding-left: 75px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	background-color: white;
@@ -448,11 +472,13 @@ img {
 }
 
 .MandateIntro {
-	padding-left: 75px;
-	padding-right: 75px;
+	padding-left: 100px;
+	padding-right: 100px;
+	font-size: 1.15em;
 	padding-top: 45px;
 	padding-bottom: 45px;
 	border-bottom: 1px solid black;
+	line-height: 1.25em;
 }
 
 .MandateList {
@@ -518,7 +544,6 @@ img {
 }
 
 .WWATitle {
-	padding-left: 75px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	background-color: white;
@@ -528,137 +553,47 @@ img {
 }
 
 .WWAIntro {
-	padding-left: 75px;
-	padding-right: 75px;
+	padding-left: 100px;
+	padding-right: 100px;
+	font-size: 1.15em;
+	line-height: 1.25em;
 	padding-top: 45px;
 	padding-bottom: 45px;
-	border-bottom: 1px solid black;
 }
 
 .TeamGrid {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: 500px 120px 500px 120px;
 	background: white;	
 }
 
-.P1 {
-	grid-column: 1;
-	grid-row: 1;
-	border-right: black 1px solid;	
-	border-bottom: black 1px solid;
+.single_icon {
+	position: relative;
+	object-fit: cover;
+}
+
+.icon_title {
+	border-top: 1px solid black;
+	border-right: 1px solid black;
+	position: relative;
+	height: 100px;
+	padding: 15px;
+	background: white;
+}
+
+.icon_image {
+	position: relative;
+	border-top: 1px solid black;
+	border-right: 1px solid black;
+	object-fit: cover;
+	height: 600px
+
 }
 
 .P1-Caption {
-	grid-column: 1;
-	grid-row: 2;
-	padding: 25px;
-	border-right: black 1px solid;	
-	border-bottom: black 1px solid;
+	height: 100px;
 }
 
-.P2 {
-	grid-column: 2;
-	grid-row: 1;
-	border-right: black 1px solid;	
-	border-bottom: black 1px solid;
-}
-
-.P2-Caption {
-	grid-column: 2;
-	grid-row: 2;
-	padding: 25px;
-	border-right: black 1px solid;	
-	border-bottom: black 1px solid;
-}
-
-.P3 {
-	grid-column: 3;
-	grid-row: 1;
-	border-right: black 1px solid;	
-	border-bottom: black 1px solid;
-}
-
-.P3-Caption {
-	grid-column: 3;
-	grid-row: 2;
-	padding: 25px;
-	border-right: black 1px solid;	
-	border-bottom: black 1px solid;
-}
-
-.P4 {
-	grid-column: 4;
-	grid-row: 1;
-	border-bottom: black 1px solid;
-}
-
-.P4-Caption {
-	grid-column: 4;
-	grid-row: 2;
-	padding: 25px;	
-	border-bottom: black 1px solid;
-}
-
-.P5 {
-	grid-column: 1;
-	grid-row: 3;
-	border-right: black 1px solid;	
-	border-bottom: black 1px solid;
-}
-
-.P5-Caption {
-	grid-column: 1;
-	grid-row: 4;
-	padding: 25px;
-	border-right: black 1px solid;	
-	border-bottom: black 1px solid;
-}
-
-.P6 {
-	grid-column: 2;
-	grid-row: 3;
-	border-right: black 1px solid;	
-	border-bottom: black 1px solid;
-}
-
-.P6-Caption {
-	grid-column: 2;
-	grid-row: 4;
-	padding: 25px;
-	border-right: black 1px solid;	
-	border-bottom: black 1px solid;
-}
-
-.P7 {
-	grid-column: 3;
-	grid-row: 3;
-	border-right: black 1px solid;	
-	border-bottom: black 1px solid;
-}
-
-.P7-Caption {
-	grid-column: 3;
-	grid-row: 4;
-	padding: 25px;
-	border-right: black 1px solid;	
-	border-bottom: black 1px solid;
-}
-
-.P8 {
-	grid-column: 4;
-	grid-row: 3;
-	border-right: black 1px solid;	
-	border-bottom: black 1px solid;
-}
-
-.P8-Caption {
-	grid-column: 4;
-	grid-row: 4;
-	padding: 25px;
-	border-right: black 1px solid;	
-	border-bottom: black 1px solid;
-}
 
 
 /*SERVICES PAGE*/
@@ -669,21 +604,20 @@ img {
 	grid-template-columns: repeat(2, 1fr);
 	font-family:new-spirit, serif;
 	font-weight: 400;
-	border-top: 1px black solid;
 	border-bottom: 1px black solid;
 	font-size: .75em;
 	grid-template-rows: 400px;
 }
 
 .ServicesTitle {
-	grid-column: 1;
+	border-top: 1px black solid;
 	border-right: 1px black solid;
 	padding: 75px;
 }
 
 .ServicesPhoto {
-	grid-column: 2;
 	object-fit: cover;
+	border-top: 1px black solid;
 }
 
 .ServicesMenu {
@@ -697,7 +631,6 @@ li:hover {
 }
 
 .Service1Title {
-	padding-left: 50px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	background-color: white;
@@ -709,25 +642,22 @@ li:hover {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	border-bottom: 1px solid black;
+	padding: 50px;
 }
 
 .Service1Body_1 {
-	grid-column: 1;
-	padding: 50px;
+	padding: 25px;
 }
 
 .Service1Body_2 {
-	grid-column: 2;
-	padding: 50px;
+	padding: 25px;
 }
 
 .Service1Body_3 {
-	grid-column: 3;
-	padding: 50px;
+	padding: 25px;
 }
 
 .Service2Title {
-	padding-left: 50px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	background-color: white;
@@ -739,20 +669,18 @@ li:hover {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	border-bottom: 1px solid black;
+	padding: 50px;
 }
 
 .Service2Body_1 {
-	grid-column: 1;
-	padding: 50px;
+	padding: 25px;
 }
 
 .Service2Body_2 {
-	grid-column: 2;
-	padding: 50px;
+	padding: 25px;
 }
 
 .Service3Title {
-	padding-left: 50px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	background-color: white;
@@ -764,20 +692,18 @@ li:hover {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	border-bottom: 1px solid black;
+	padding: 50px;
 }
 
 .Service3Body_1 {
-	grid-column: 1;
-	padding: 50px;
+	padding: 25px;
 }
 
 .Service3Body_2 {
-	grid-column: 2;
-	padding: 50px;
+	padding: 25px;
 }
 
 .Service4Title {
-	padding-left: 50px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	background-color: white;
@@ -789,21 +715,19 @@ li:hover {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	border-bottom: 1px solid black;
+	padding: 50px;
 }
 
 .Service4Body_1 {
-	grid-column: 1;
-	padding: 50px;
+	padding: 25px;
 }
 
 .Service4Body_2 {
-	grid-column: 2;
-	padding: 50px;
+	padding: 25px;
 }
 
 
 .Service5Title {
-	padding-left: 50px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	background-color: white;
@@ -814,51 +738,64 @@ li:hover {
 .Service5Body {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	border-bottom: 1px solid black;
+	padding: 50px;
 }
 
 .Service5Body_1 {
-	grid-column: 1;
-	padding: 50px;
+	padding: 25px;
 }
 
 .Service5Body_2 {
-	grid-column: 2;
-	padding: 50px;
+	padding: 25px;
 }
 
 
 @media (max-width: 1100px) {
-	.UpcomingEvents {
+	.UpcomingEvents,
+	.LatestVideos {
 		grid-template-columns: 1fr 1fr;
-	}
-
-/*	.LatestVideos {
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr;
-	}*/
-}
-
-@media (max-width: 600px) {
-	.UpcomingEvents {
-		grid-template-columns: 1fr;
-	}
-
-/*	.LatestVideos {
-		grid-template-columns: 1fr;
-		grid-template-rows: 4fr;
 	}
 
 	.TeamGrid {
+
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.ServicesHeading,
+	.Service1Body,
+	.Service2Body,
+	.Service3Body,
+	.Service4Body,
+	.Service5Body {
 		grid-template-columns: 1fr;
-	}*/
+	}
+}
+
+@media (max-width: 900px) {
+	.TeamGrid {
+		grid-template-columns: 1fr 1fr;
+	}
+	.ABOUT {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 600px) {
+
+	.UpcomingEvents,
+	.LatestVideos,
+	.TeamGrid {
+		grid-template-columns: 1fr;
+	}
 }
 
 
 
 /*BOTTOM MARGIN*/
 
-.tcontainer2 {
+.tcontainer2 {	
+		position: relative;
+		border-top: 1px solid black;
         width: 100%;
         overflow: hidden;
     }
