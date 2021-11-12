@@ -156,15 +156,27 @@ p {
 	background-repeat: none;
 }
 
-.IntroParagraph {
+.Text_Box {
+	width: 100%;
+}
+
+.Text_Box:hover {
+	background: white;
+	transition: 0.2s;
+}
+
+.Text_Paragraph {
+	font-size: 1.5em;
 	margin: auto;
-	max-width: 950px;
-	padding-left: 50px;
-	padding-right: 50px;
-	padding-top: 35px;
-	padding-bottom: 35px;
+	max-width: 750px;
+	padding: 35px;
 	font-size: 1.15em;
 	line-height: 1.35em;
+}
+
+.Service:hover {
+	background: white;
+	transition: 0.2s;
 }
 
 .UpcomingEvents {
@@ -194,16 +206,6 @@ p {
 	border-bottom: 1px solid black;
 }
 
-.AboutXpace {
-	margin: auto;
-	max-width: 950px;
-	padding-left: 50px;
-	padding-right: 50px;
-	padding-top: 35px;
-	padding-bottom: 35px;
-	font-size: 1.15em;
-	line-height: 1.35em;	
-}
 
 .Event1 {
 	border-right: 1px black solid;
@@ -211,7 +213,7 @@ p {
 }
 
 .Event1:hover {
-	background: yellowgreen;
+	background: lightpink;
 	cursor: pointer;
 	border-right: 1px black solid;
 }
@@ -229,7 +231,7 @@ p {
 }
 
 .Event2:hover {
-	background: yellowgreen;
+	background: lightpink;
 	cursor: pointer;
 	border-right: 1px black solid;
 }
@@ -247,7 +249,7 @@ p {
 }
 
 .Event3:hover {
-	background: yellowgreen;
+	background: lightpink;
 	cursor: pointer;
 	border-right: 1px black solid;
 }
@@ -260,7 +262,7 @@ p {
 }
 
 .Event4:hover {
-	background: yellowgreen;
+	background: lightpink;
 	cursor: pointer;
 	border-right: 1px black solid;
 }
@@ -320,6 +322,11 @@ p {
 .video_title {
 	height: 300px;
 	border-right: 1px solid black;
+}
+
+.video_title:hover {
+	background: white;
+	transition: 0.2s;
 }
 
 .LVTitle {
@@ -448,25 +455,11 @@ img {
 	border-top: 1px black solid;
 }
 
-
-.ABOUTIntro {
-	border-bottom: 1px solid black;
-}
-
-.ABOUTIntroParagraph {
-	align-content: center;
-	padding-top: 75px;
-	padding-bottom: 75px;
-	padding-left: 100px;
-	padding-right: 100px;
-	font-size: 1.15em;
-	line-height: 1.25em;
-}
-
 .MandateTitle {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	background-color: white;
+	border-top: 1px solid black;
 	border-bottom: 1px solid black;	
 	text-align: center;
 }
@@ -481,11 +474,18 @@ img {
 	line-height: 1.25em;
 }
 
+.Mandate {
+	background: white;
+	border-top: 1px solid black;
+}
+
 .MandateList {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: 100px;
 	background: white;
+	margin: auto;
+	max-width: 850px;
 }
 
 .M1 {
